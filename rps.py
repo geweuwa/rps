@@ -17,5 +17,17 @@ def win_cond():
             print("Tie.")
         elif user_input == "r" and bot_choice == "p":
             print("You lose.")
+        elif user_input == "s" and bot_choice == "p":
+            print("You win!")
+        elif user_input == "s" and bot_choice == "s":
+            print("Tie.")
+        elif user_input == "s" and bot_choice == "r":
+            print("You lose.")
+        elif user_input == "p" and bot_choice == "r":
+            print("You win!")
+        elif user_input == "p" and bot_choice == "p":
+            print("Tie.")
+        elif user_input == "p" and bot_choice == "s":
+            print("You lose.")
 
 win_cond()
