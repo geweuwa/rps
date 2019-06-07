@@ -1,5 +1,7 @@
 import random
 history = []
+
+
 class user_turn:
     def rps_check():
         check = False
@@ -7,19 +9,27 @@ class user_turn:
         
         if user_input == "r":
             check = True
+            history.append(user_input)
+            return "r"
         elif user_input == "R":
             check = True
+            history.append(user_input)
+            return "r"
         elif user_input == "p":
             check = True
+            history.append(user_input)
+            return "p"
         elif user_input == "P":
             check = True
+            history.append(user_input)
+            return "p"
         elif user_input == "s":
             check = True
+            history.append(user_input)
+            return "s"
         elif user_input == "S":
             check = True
-
-        if check == True:
             history.append(user_input)
-        elif check != True:
-            print()
+            return "s"
+
     
